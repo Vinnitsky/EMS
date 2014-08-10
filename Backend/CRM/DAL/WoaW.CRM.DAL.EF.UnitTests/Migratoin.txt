@@ -1,0 +1,7 @@
+﻿Enable-migrations -ProjectName WoaW.CRM.DAL.EF -StartUpProjectName WoaW.CRM.Model -ContextProjectName WoaW.CRM.DAL.EF -ContextTypeName WoaW.CRM.DAL.EF.CrmDbContext -MigrationsDirectory CrmMigration -Force
+Add-migration InitDB -ProjectName WoaW.CRM.DAL.EF -StartUpProjectName WoaW.CRM.Model -ConfigurationTypeName CrmConfiguration  -Force
+Update-database -ProjectName WoaW.CRM.DAL.EF -StartUpProjectName WoaW.CRM.DAL.EF.UnitTests -ConfigurationTypeName CrmConfiguration -Force
+
+Enable-migrations -ProjectName WoaW.CRM.DAL.EF -StartUpProjectName WoaW.CRM.Model -ContextProjectName WoaW.CRM.DAL.EF -ContextTypeName WoaW.CRM.DAL.EF.UserDbContext -MigrationsDirectory IdentityMigration -Force
+Add-migration InitDB -ProjectName WoaW.CRM.DAL.EF -StartUpProjectName WoaW.CRM.Model -ConfigurationTypeName IdentityConfiguration  -Force
+Update-database -ProjectName WoaW.CRM.DAL.EF -StartUpProjectName WoaW.CRM.DAL.EF.UnitTests -ConfigurationTypeName IdentityConfiguration -Force
