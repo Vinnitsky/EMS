@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C44891C6-6230-45D0-B91A-0D13E3FAF12E}</ProjectGuid>
+    <ProjectGuid>{3B7F0D96-E419-490D-A06E-BE8FAE969AE8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WoaW.CMS.DAL.Ravendb.UnitTests</RootNamespace>
-    <AssemblyName>WoaW.CMS.DAL.Ravendb.UnitTests</AssemblyName>
+    <RootNamespace>WoaW.CMS.Model.UnitTests</RootNamespace>
+    <AssemblyName>WoaW.CMS.Model.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -51,15 +51,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="RelationshipUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PartyUnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WoaW.Parties.Storage.Ravendb\WoaW.CMS.DAL.Ravendb.csproj">
-      <Project>{9c7083ac-21c7-4c92-96af-592db3960e63}</Project>
-      <Name>WoaW.CMS.DAL.Ravendb</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Model\WoaW.Parties\WoaW.CMS.Model.csproj">
+    <ProjectReference Include="..\WoaW.CMS.Model\WoaW.CMS.Model.csproj">
       <Project>{f2fa81be-b327-411c-8c7d-28dbad3e2889}</Project>
       <Name>WoaW.CMS.Model</Name>
     </ProjectReference>
