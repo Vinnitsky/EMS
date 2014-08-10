@@ -59,7 +59,7 @@
       <Project>{9c7083ac-21c7-4c92-96af-592db3960e63}</Project>
       <Name>WoaW.CMS.DAL.Ravendb</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Model\WoaW.Parties\WoaW.CMS.Model.csproj">
+    <ProjectReference Include="..\..\Model\WoaW.CMS.Model\WoaW.CMS.Model.csproj">
       <Project>{f2fa81be-b327-411c-8c7d-28dbad3e2889}</Project>
       <Name>WoaW.CMS.Model</Name>
     </ProjectReference>
