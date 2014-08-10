@@ -4,9 +4,9 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WoaW.CRM.Model.Organizations;
+using WoaW.CMS.Model.Organizations;
 
-namespace WoaW.CRM.DAL.EF.Configurations
+namespace WoaW.CMS.DAL.EF.Configurations
 {
     sealed class OrganiazationConfiguration : EntityTypeConfiguration<Organization>
     {

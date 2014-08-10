@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using WoaW.CRM.Model;
+using WoaW.CMS.Model;
 
-namespace WoaW.CRM.DAL.EF
+namespace WoaW.CMS.DAL.EF
 {
     public class User : Party, IUser<string>
     {

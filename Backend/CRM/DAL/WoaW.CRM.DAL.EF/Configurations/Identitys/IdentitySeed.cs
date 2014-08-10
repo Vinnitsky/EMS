@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WoaW.CRM.DAL.EF.Configurations
+namespace WoaW.CMS.DAL.EF.Configurations
 {
     public class IdentitySeed
     {

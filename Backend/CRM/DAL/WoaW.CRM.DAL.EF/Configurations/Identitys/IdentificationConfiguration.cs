@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity.ModelConfiguration;
-using WoaW.CRM.Model.Identities;
+using WoaW.CMS.Model.Identities;
 
-namespace WoaW.CRM.DAL.EF.Configurations
+namespace WoaW.CMS.DAL.EF.Configurations
 {
     class IdentificationConfiguration : EntityTypeConfiguration<Identification>
     {

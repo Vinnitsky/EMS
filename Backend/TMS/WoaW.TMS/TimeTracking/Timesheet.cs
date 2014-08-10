@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using WoaW.CRM.Model;
+using WoaW.CMS.Model;
 
 namespace WoaW.TMS.Tasks.TimeTracking
 {

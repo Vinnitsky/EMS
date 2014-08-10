@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Linq;
-using WoaW.CRM.Model.Persons;
-using WoaW.CRM.Model.Repationships;
+using WoaW.CMS.Model.Persons;
+using WoaW.CMS.Model.Repationships;
 using WoaW.NS;
 using WoaW.TMS.Tasks.Rules;
 

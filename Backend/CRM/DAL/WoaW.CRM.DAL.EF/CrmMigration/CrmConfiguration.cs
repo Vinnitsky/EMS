@@ -1,11 +1,11 @@
-namespace WoaW.CRM.DAL.EF.CrmMigration
+namespace WoaW.CMS.DAL.EF.CrmMigration
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class CrmConfiguration : DbMigrationsConfiguration<WoaW.CRM.DAL.EF.CrmDbContext>
+    internal sealed class CrmConfiguration : DbMigrationsConfiguration<WoaW.CMS.DAL.EF.CrmDbContext>
     {
         public CrmConfiguration()
         {
@@ -13,7 +13,7 @@ namespace WoaW.CRM.DAL.EF.CrmMigration
             MigrationsDirectory = @"CrmMigration";
         }
 
-        protected override void Seed(WoaW.CRM.DAL.EF.CrmDbContext context)
+        protected override void Seed(WoaW.CMS.DAL.EF.CrmDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

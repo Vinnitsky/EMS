@@ -4,10 +4,10 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WoaW.CRM.Model.Identities;
-using WoaW.CRM.Model.Persons;
+using WoaW.CMS.Model.Identities;
+using WoaW.CMS.Model.Persons;
 
-namespace WoaW.CRM.DAL.EF.Configurations
+namespace WoaW.CMS.DAL.EF.Configurations
 {
     class SignatureConfiguration : EntityTypeConfiguration<Signature>
     {

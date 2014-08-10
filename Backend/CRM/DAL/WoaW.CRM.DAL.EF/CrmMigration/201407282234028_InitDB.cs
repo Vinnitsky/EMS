@@ -1,4 +1,4 @@
-namespace WoaW.CRM.DAL.EF.CrmMigration
+namespace WoaW.CMS.DAL.EF.CrmMigration
 {
     using System;
     using System.Data.Entity.Migrations;

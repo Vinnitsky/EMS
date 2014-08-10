@@ -6,9 +6,9 @@ using System.Linq;
 using System.Data.Entity;//QueryableExtensions;
 using System.Text;
 using System.Threading.Tasks;
-using WoaW.CRM.Model;
+using WoaW.CMS.Model;
 
-namespace WoaW.CRM.DAL.EF
+namespace WoaW.CMS.DAL.EF
 {
     public class UserStore : IUserStore<User, string>, IUserPasswordStore<User, string>, IDisposable
     {

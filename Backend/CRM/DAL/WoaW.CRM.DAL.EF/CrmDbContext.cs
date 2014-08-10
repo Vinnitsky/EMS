@@ -4,9 +4,9 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WoaW.CRM.DAL.EF.Configurations;
+using WoaW.CMS.DAL.EF.Configurations;
 
-namespace WoaW.CRM.DAL.EF
+namespace WoaW.CMS.DAL.EF
 {
     public class CrmDbContext : DbContext
     {

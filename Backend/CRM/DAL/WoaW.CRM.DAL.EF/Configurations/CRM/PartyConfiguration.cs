@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity.ModelConfiguration;
-using WoaW.CRM.Model;
+using WoaW.CMS.Model;
 
-namespace WoaW.CRM.DAL.EF.Configurations
+namespace WoaW.CMS.DAL.EF.Configurations
 {
     sealed class PartyConfiguration : EntityTypeConfiguration<Party>
     {

@@ -4,14 +4,14 @@ using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 //using System.Data.Entity;
-using WoaW.CRM.Model.Persons;
+using WoaW.CMS.Model.Persons;
 using System.Data.Entity.Validation;
 using Microsoft.AspNet.Identity;
 using System.Data.Entity.Infrastructure;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Net;
 
-namespace WoaW.CRM.DAL.EF.UnitTests
+namespace WoaW.CMS.DAL.EF.UnitTests
 {
     /// <summary>
     /// Summary description for UnitTest2

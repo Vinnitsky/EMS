@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WoaW.CRM.Model;
+using WoaW.CMS.Model;
 
-namespace WoaW.CRM.DAL.EF
+namespace WoaW.CMS.DAL.EF
 {
     public class PartyIdentity : IdentityUser
     {

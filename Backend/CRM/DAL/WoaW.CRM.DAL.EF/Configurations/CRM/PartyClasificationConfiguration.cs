@@ -1,8 +1,8 @@
 ﻿using System.Data.Entity.ModelConfiguration;
-using WoaW.CRM.Model;
-using WoaW.CRM.Model.Clasifications;
+using WoaW.CMS.Model;
+using WoaW.CMS.Model.Clasifications;
 
-namespace WoaW.CRM.DAL.EF.Configurations
+namespace WoaW.CMS.DAL.EF.Configurations
 {
     sealed class PartyClasificationConfiguration : EntityTypeConfiguration<PartyClasification>
     {

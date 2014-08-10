@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using WoaW.CRM.Model;
-using WoaW.CRM.Model.Repationships;
+using WoaW.CMS.Model;
+using WoaW.CMS.Model.Repationships;
 using WoaW.TMS.Tasks;
 
 namespace WoaW.TMS

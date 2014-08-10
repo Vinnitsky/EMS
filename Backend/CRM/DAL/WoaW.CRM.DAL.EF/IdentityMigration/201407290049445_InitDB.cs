@@ -1,4 +1,4 @@
-namespace WoaW.CRM.DAL.EF.IdentityMigration
+namespace WoaW.CMS.DAL.EF.IdentityMigration
 {
     using System;
     using System.Data.Entity.Migrations;
