@@ -13,6 +13,7 @@ namespace WoaW.CMS.DAL.EF.Configurations
         public PartyIdentityConfiguration()
         {
             ToTable("AspNetUsers");
+            HasRequired(t => t.Party);
         }
     }
 }

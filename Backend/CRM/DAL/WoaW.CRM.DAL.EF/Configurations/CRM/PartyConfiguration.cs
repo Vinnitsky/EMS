@@ -11,6 +11,9 @@ namespace WoaW.CMS.DAL.EF.Configurations
             Property(t => t.Title).IsRequired();
             Property(t => t.FromDate).HasColumnType("datetime2");
             Property(t => t.ThruDate).HasColumnType("datetime2");
+
+            //HasMany<IIdentity>(t => t.Identities).WithOptional(t => t.Party).HasForeignKey(t => t.Id);
+
         }
     }
 }

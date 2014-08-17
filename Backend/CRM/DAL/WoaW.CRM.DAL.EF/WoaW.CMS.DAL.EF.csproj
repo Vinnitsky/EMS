@@ -55,26 +55,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configurations\CRM\CMSMapper.cs" />
+    <Compile Include="Configurations\CRM\CMSSeed.cs" />
     <Compile Include="Configurations\Identitys\IdentityMapper.cs" />
     <Compile Include="Configurations\Identitys\IdentificationConfiguration.cs" />
     <Compile Include="Configurations\Identitys\SignatureConfiguration.cs" />
     <Compile Include="Configurations\Identitys\PartyIdentityConfiguration.cs" />
-    <Compile Include="Configurations\Identitys\UserConfiguration.cs" />
-    <Compile Include="CrmMigration\201407282234028_InitDB.cs" />
-    <Compile Include="CrmMigration\201407282234028_InitDB.Designer.cs">
-      <DependentUpon>201407282234028_InitDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CrmMigration\CrmConfiguration.cs" />
     <Compile Include="Configurations\Identitys\IdentitySeed.cs" />
-    <Compile Include="IdentityMigration\201407290049445_InitDB.cs" />
-    <Compile Include="IdentityMigration\201407290049445_InitDB.Designer.cs">
-      <DependentUpon>201407290049445_InitDB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IdentityMigration\Configuration.cs" />
     <Compile Include="PartyIdentity.cs" />
-    <Compile Include="User.cs" />
-    <Compile Include="UserStore.cs" />
-    <Compile Include="Configurations\CRM\CRMSeed.cs" />
+    <Compile Include="SeparateUserStore.cs" />
+    <Compile Include="SingleUserStore.cs" />
+    <Compile Include="UserManagerHelper.cs" />
     <Compile Include="Configurations\CRM\GenderConfiguration.cs" />
     <Compile Include="Configurations\CRM\IdentityDocumentConfiguration.cs" />
     <Compile Include="Configurations\CRM\MaritalStatusConfiguration.cs" />
@@ -87,22 +78,11 @@
     <Compile Include="Configurations\CRM\PartyRelationshipConfiguration.cs" />
     <Compile Include="Configurations\CRM\PartyConfiguration.cs" />
     <Compile Include="Configurations\CRM\PersonConfiguration.cs" />
-    <Compile Include="IdentityDbContext.cs" />
-    <Compile Include="CrmDbContext.cs" />
-    <Compile Include="Configurations\CRM\CRMMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="CrmMigration\201407282234028_InitDB.resx">
-      <DependentUpon>201407282234028_InitDB.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="IdentityMigration\201407290049445_InitDB.resx">
-      <DependentUpon>201407290049445_InitDB.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Model\WoaW.CMS.Model\WoaW.CMS.Model.csproj">

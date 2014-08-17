@@ -15,7 +15,7 @@ namespace WoaW.CMS.Model.Repationships
         #endregion
 
         #region properties
-        public string Id { get; private set; }
+        public string Id { get; set; }
         public string Title
         {
             get { return _title; }

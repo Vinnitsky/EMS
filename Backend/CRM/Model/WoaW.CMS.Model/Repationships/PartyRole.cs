@@ -15,8 +15,8 @@ namespace WoaW.CMS.Model.Repationships
         #endregion
 
         #region propeties
-        public string Id { get; private set; }
-        public Party Party
+        public string Id { get; set; }
+        virtual public Party Party
         {
             get { return _party; }
             set
@@ -28,7 +28,7 @@ namespace WoaW.CMS.Model.Repationships
                 RaisePropertyChanged();
             }
         }
-        public RoleType Type
+        virtual public RoleType Type
         {
             get { return _type; }
             set

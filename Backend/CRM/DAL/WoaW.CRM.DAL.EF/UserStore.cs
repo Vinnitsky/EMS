@@ -10,11 +10,11 @@ using WoaW.CMS.Model;
 
 namespace WoaW.CMS.DAL.EF
 {
-    public class UserStore : IUserStore<User, string>, IUserPasswordStore<User, string>, IDisposable
+    public class UserStore_1 : IUserStore<User, string>, IUserPasswordStore<User, string>, IDisposable
     {
         private UserDbContext _identityContext;
         private CrmDbContext _crmContext;
-        public UserStore()
+        public UserStore_1()
         {
             _identityContext = new UserDbContext();
             _crmContext = new CrmDbContext();

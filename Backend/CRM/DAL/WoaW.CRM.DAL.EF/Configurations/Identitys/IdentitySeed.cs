@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Data.Entity;
 
 namespace WoaW.CMS.DAL.EF.Configurations
 {
-    public class IdentitySeed
+    public sealed class IdentitySeed
     {
-        public IdentitySeed(UserDbContext dbContext)
+        public IdentitySeed(DbContext dbContext)
         {
 
         }

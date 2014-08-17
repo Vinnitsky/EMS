@@ -68,14 +68,20 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="MyDropCreateDatabaseAlways.cs" />
+    <Compile Include="PersonUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitTest2.cs" />
+    <Compile Include="SingleUserStoreUnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\WoaW.Ems.Dal.EF\WoaW.Ems.Dal.EF.csproj">
+      <Project>{4879fb05-94b5-43aa-9354-bb6090d1e7eb}</Project>
+      <Name>WoaW.Ems.Dal.EF</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Model\WoaW.CMS.Model\WoaW.CMS.Model.csproj">
       <Project>{f2fa81be-b327-411c-8c7d-28dbad3e2889}</Project>
       <Name>WoaW.CMS.Model</Name>
@@ -84,9 +90,6 @@
       <Project>{ae9d522d-1e7f-4177-821b-41b395b89021}</Project>
       <Name>WoaW.CMS.DAL.EF</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Migratoin.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

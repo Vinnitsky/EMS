@@ -11,7 +11,7 @@ namespace WoaW.CMS.Model.Repationships
         #endregion
 
         #region properties
-        public string Id { get; private set; }
+        public string Id { get; set; }
         public string Title
         {
             get { return _title; }
@@ -46,8 +46,10 @@ namespace WoaW.CMS.Model.Repationships
         public RoleType(string aTitle, string anId = null)
             : this()
         {
-            Id = anId;
             Title = aTitle;
+
+            if (string.IsNullOrWhiteSpace(anId) == false)
+                Id = anId;
         }
 
         #endregion

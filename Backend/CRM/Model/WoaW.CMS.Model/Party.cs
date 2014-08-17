@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -21,7 +22,7 @@ namespace WoaW.CMS.Model
         #endregion
 
         #region properties
-        public string Id { get; private set; }
+        public string Id { get; set; }
         public string Title
         {
             get { return _title; }
@@ -98,6 +99,10 @@ namespace WoaW.CMS.Model
                 RaisePropertyChanged();
             }
         }
+        /// <summary>
+        /// используется в TMS в частоности в TaskManagerFasade 
+        /// </summary>
+        public bool IsBusy { get; set; }
 
         virtual public Signature Signature
         {

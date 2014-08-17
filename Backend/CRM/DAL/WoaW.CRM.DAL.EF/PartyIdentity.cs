@@ -1,9 +1,4 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WoaW.CMS.Model;
 
 namespace WoaW.CMS.DAL.EF
@@ -19,8 +14,19 @@ namespace WoaW.CMS.DAL.EF
         {
 
         }
+        public PartyIdentity(string userName, string id)
+            : base(userName)
+        {
+            Id = id;
+        }
 
-        public string UserId { get; set; }
-        virtual public User User { get; set; }
+
+        virtual public Party Party { get; set; }
+
+        public string Fio { get; set; }
+
+        public bool IsDisabled { get; set; }
+
+        public bool IsOnline { get; set; }
     }
 }
